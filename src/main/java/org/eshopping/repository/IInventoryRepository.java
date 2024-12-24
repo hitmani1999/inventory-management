@@ -14,7 +14,7 @@ public interface IInventoryRepository extends JpaRepository<Inventory, Long> {
 
     Inventory findByProduct(Product product);
 
-    @Query("select new org.eshoping.model.Inventory(p.id, i.stock) from Inventory i right join i.product p where stock < :threshold or i.stock is null")
+    @Query("select new org.eshopping.model.Inventory(p.id, i.stock) from Inventory i right join i.product p where stock < :threshold or i.stock is null")
     List<Inventory> productsHavingStockBelowThreshold(@Param("threshold") int threshold);
 
 }
