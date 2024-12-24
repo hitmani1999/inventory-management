@@ -4,31 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3da80c19-9a68-4c3a-b4ca-7d622508fe14" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testInteg/java/org/eshopping/config/CucumberSpringConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testInteg/java/org/eshopping/features/eshopping.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testInteg/java/org/eshopping/steps/EShoppingSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/eshoping/InventoryManagementApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/eshoping/cache/metrics/CacheMetricsLogger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/eshoping/config/ExecutorConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/eshoping/config/RedisConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/eshoping/config/RestTemplateConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/eshoping/connector/ExternalServices.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/eshoping/controller/InventoryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/eshoping/exception/ProductNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/eshoping/model/Inventory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/eshoping/model/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/eshoping/repository/IInventoryRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/eshoping/repository/IProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/eshoping/service/InventoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/eshoping/util/Utility.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/eshoping/service/InventoryServiceTest.java" beforeDir="false" />
+    <list default="true" id="3da80c19-9a68-4c3a-b4ca-7d622508fe14" name="Changes" comment="Added integration test cases">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/eshopping/repository/IInventoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/eshopping/repository/IInventoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testInteg/java/org/eshopping/steps/EShoppingSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testInteg/java/org/eshopping/steps/EShoppingSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +89,19 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.TestRunnerIT">
+    <configuration name="InventoryManagementApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.eshopping.InventoryManagementApplication" />
+      <module name="inventory-management.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.eshopping.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Validate get product details API should return product details" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/testInteg/java/org/eshopping/features/eshopping.feature" />
@@ -142,28 +134,6 @@
         <option name="taskNames">
           <list>
             <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="inventory-management [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -227,10 +197,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestRunnerIT" />
+        <item itemvalue="Application.InventoryManagementApplication" />
         <item itemvalue="Cucumber Java.Scenario: Validate get product details API should return product details" />
         <item itemvalue="Gradle.inventory-management [test]" />
         <item itemvalue="Gradle.inventory-management [build]" />
-        <item itemvalue="Gradle.inventory-management [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -243,6 +213,15 @@
       <option name="presentableId" value="Default" />
       <updated>1734867117885</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added integration test cases">
+      <option name="closed" value="true" />
+      <created>1734987203698</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734987203698</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -255,6 +234,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added integration test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added integration test cases" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
